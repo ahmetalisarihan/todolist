@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/javascripttodolist/css/style.css" />
+    <link rel="stylesheet" href="/css/style.css" />
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
@@ -63,7 +63,7 @@
       </div>
     </div>
     <div class="container">
-      <div class="header">
+      <form class="header" id="userTask">
         <img
           src="https://cdn.sanity.io/images/9kdepi1d/production/65c832d202a503b15d99e628f4313782f3ef50db-300x62.png"
           class="mb-1"
@@ -71,17 +71,15 @@
         />
         <h2>Yapılacaklar Listesi</h2>
         <input type="text" id="task" placeholder="Bugün ne yapacaksın?" />
-        <span onclick="newElement()" id="liveToastBtn" class="button"
-          >Ekle</span
-        >
-      </div>
+        <span onclick="newElement()" id="liveToastBtn" class="button">Ekle</span>
+      </form>
 
       <ul id="list">
-        <li>3 Litre Su İç</li>
+        <!-- <li>3 Litre Su İç</li>
         <li>Ödevleri Yap</li>
         <li>En Az 3 Saat Kodlama Yap</li>
         <li>Yemek Yap</li>
-        <li>50 Sayfa Kitap Oku</li>
+        <li>50 Sayfa Kitap Oku</li> -->
       </ul>
       <!---------- Add script links ---------->
       <script src="/script/app.js"></script>
